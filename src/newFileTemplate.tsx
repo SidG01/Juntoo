@@ -1,20 +1,14 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
   View,
+  Image,
+  useWindowDimensions,
+  Text,
+  TextInput,
 } from 'react-native';
 
 import {
@@ -24,31 +18,34 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import LoginScreen from './src/screens/loginScreen';
 
-function App(): React.JSX.Element {
+function newFileTemplate(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
   return (
-<SafeAreaView>
-        <View
-          style={{
-            backgroundColor: '#F9FBFC', height: '100%', width: '100%',
-          }}>
-          <LoginScreen></LoginScreen>
+    <SafeAreaView style={styles.root}>
+        <View style={styles.container}>
+            
         </View>
     </SafeAreaView>
-  ); 
+  );
 }
 
 const styles = StyleSheet.create({
-  root: {
-    
-  }
-});
+  // size of the view
+    root: {
+      alignItems: 'center',
+      height: '15%'
+    },
+    // size of the item
+    container: {
+      alignItems: 'center',
+        width: '70%',
+        height: '70%',
+    },
+  });
 
-export default App;
+export default newFileTemplate;
