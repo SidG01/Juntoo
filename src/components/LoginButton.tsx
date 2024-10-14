@@ -27,39 +27,35 @@ function LoginButton({onPress, text}:{[key:string]:any}): React.JSX.Element {
   };
 
   return (
-    <SafeAreaView style={styles.root}>
+    <View style={styles.root}>
         <Pressable onPress={onPress} style={[styles.container]}>
             <Text style={styles.text}>{text}</Text>
         </Pressable>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   // size of the view
     root: {
-      alignItems: 'center',
-      height: '15%'
     },
     // size of the item
     container: {
-        alignItems: 'center',
-        width: '80%',
-        height: '70%',
-        backgroundColor: "#3B71F3",
-        padding: '3.5%',
-        marginVertical: 3,
-        borderRadius: 13,
+      backgroundColor: "#3B71F3", 
+
+      width: '100%',
+
+      padding: 15,
+      marginVertical: 5,
+
+      alignItems: 'center',
+      borderRadius: 5,
+
     },
     text: {
         fontWeight: 'bold',
           color: 'white',
-          textAlign: 'center',
-          textAlignVertical: 'center',
-          verticalAlign: 'middle',
-          paddingVertical: 5,
           fontSize: 20,
-          justifyContent: 'center'
     },
   });
 

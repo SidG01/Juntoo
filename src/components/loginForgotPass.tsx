@@ -39,12 +39,12 @@ const styles = StyleSheet.create({
   // size of the view
     root: {
       alignItems: 'center',
-      height: '8%'
+      height: '10%'
     },
     // size of the item
     container: {
         alignItems: 'center',
-        width: '70%',
+        width: '140%',
         height: '50%',
         padding: 2,
         marginVertical: 5,

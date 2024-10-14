@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
       // size of the item
       container: {
           alignItems: 'center',
-          width: '80%',
+          width: '140%',
           height: '70%',
           backgroundColor: "#FAE9EA",
           padding: '3.5%',
